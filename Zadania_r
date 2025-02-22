@@ -3,6 +3,10 @@ kostka <- function(n) {
   sample(1:6, size = n, replace = TRUE)
 }
 
+2.
+wektor <- function(n) {
+  return(1:n)
+}
 
 4.
 przeciwprostokatna <- function(a, b) {

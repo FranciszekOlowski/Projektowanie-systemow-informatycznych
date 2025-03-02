@@ -14,16 +14,15 @@ plot(frequent_terms)
 install.packages("wordcloud")
 library(wordcloud)
 
+# Utwórz chmurę słów
+wordcloud(frequent_terms$WORD, frequent_terms$FREQ)
+
 
 # Opcje chmury słów
 ?wordcloud
 # Zmiana wartości min.freq i max.words w celu wyświetlenia mniejszej/większej liczby słów.
 # min.freq: słowa o częstości poniżej tej wartości nie będą wyświetlane
 # max.words: maksymalna liczba słów do wyświetlenia
-
-
-# Utwórz chmurę słów
-wordcloud(frequent_terms$WORD, frequent_terms$FREQ)
 
 
 # Ograniczenie liczby słów w chmurze poprzez określenie minimalnej częstości
